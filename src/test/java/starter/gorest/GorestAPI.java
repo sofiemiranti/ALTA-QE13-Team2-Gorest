@@ -27,7 +27,7 @@ public class GorestAPI {
     public static String UPDATE_USER_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
     public static String UPDATE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String UPDATE_USER_INVALID_PATH_WITH_ID = Constants.BASE_URL + "/publiccc/v2/users/{id}";
-
+    public static String DELETE_POST = Constants.BASE_URL + "/public/v2/posts/{id}";
     @Step ("Create new user")
     public void createNewUser (File json) {
         SerenityRest.given()
@@ -135,6 +135,18 @@ public class GorestAPI {
 
     @Step("Update user invalid path")
     public void updateUserInvalidPath (int id){
+        SerenityRest.given()
+                .header("Authorization", "Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id);
+    }
+    @Step("Delete post")
+    public void deletePost (int id){
+        SerenityRest.given()
+                .header("Authorization", "Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id);
+    }
+    @Step("Delete post invalid id")
+    public void deletePostInvalid (String id){
         SerenityRest.given()
                 .header("Authorization", "Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
                 .pathParam("id", id);
