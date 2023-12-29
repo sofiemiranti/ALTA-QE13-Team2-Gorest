@@ -19,6 +19,11 @@ public class GorestAPI {
     public static String GET_LIST_POST = Constants.BASE_URL+ "/public/v2/posts?page={page}";
     public static String GET_SINGLE_POST = Constants.BASE_URL+ "/public/v2/posts/{id}";
     public static String GET_USER_DETAILS_WITH_EMAIL = Constants.BASE_URL + "/public/v2/users?email={email}";
+    public static String GET_COMMENTS_DETAILS_WITHOUT_ID = Constants.BASE_URL+ "/public/v2/comments";
+    public static String GET_COMMENTS_DETAILS_WITH_ID = Constants.BASE_URL+ "/public/v2/comments/{id}";
+    public static String GET_COMMENTS_DETAILS_NAME_PARAM = Constants.BASE_URL+"/public/v2/comments?name={name}";
+    public static String GET_COMMENTS_DETAILS_INVALID_PARAM = Constants.BASE_URL+"/public/v2/comments?invalid_param={invalid_param}";
+
 
     @Step ("Create new user")
     public void createNewUser (File json) {
@@ -82,6 +87,19 @@ public class GorestAPI {
     @Step("Get user details with email")
     public void getUserDetailsWithEmailParam (String email) {
         SerenityRest.given().pathParam("email", email );
+    }
+
+    @Step("Get comments details with id")
+    public void getCommentsDetails (String id) {
+        SerenityRest.given().pathParam("id", id);
+    }
+    @Step("Get comments details with name parameter")
+    public void getCommentNameParam(String name){
+        SerenityRest.given().pathParam("name", name);
+    }
+    @Step("Get user details with invalid param")
+    public void getCommentsDetailsWithInvalidParam (String invalid_param) {
+        SerenityRest.given().pathParam("invalid_param", invalid_param);
     }
 
 }

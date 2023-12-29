@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "post_id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "post_id",
+    "name",
+    "email",
+    "body"
+  ]
+}
