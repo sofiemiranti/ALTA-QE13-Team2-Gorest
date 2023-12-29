@@ -67,4 +67,14 @@ public class GetUserDetailsStepDef {
     public void sendRequestGetUserDetailsWithInvalidParameter() {
         SerenityRest.when().get(GorestAPI.GET_USER_DETAILS_INVALID_PARAM);
     }
+
+    @Given("Get user details with parameter email is {string}")
+    public void getUserDetailsWithParameterEmailIs(String email) {
+        gorestAPI.getUserDetailsWithEmailParam(email);
+    }
+
+    @When("Send request get user details with parameter email")
+    public void sendRequestGetUserDetailsWithParameterEmail() {
+        SerenityRest.when().get(GorestAPI.GET_USER_DETAILS_WITH_EMAIL);
+    }
 }
