@@ -25,17 +25,18 @@ public class GorestAPI {
     public static String GET_COMMENTS_DETAILS_NAME_PARAM = Constants.BASE_URL+"/public/v2/comments?name={name}";
     public static String GET_COMMENTS_DETAILS_INVALID_PARAM = Constants.BASE_URL+"/public/v2/comments?invalid_param={invalid_param}";
     public static String UPDATE_POST = Constants.BASE_URL+"/public/v2/posts/{id}";
+
     public static String UPDATE_USER_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
     public static String UPDATE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String UPDATE_USER_INVALID_PATH_WITH_ID = Constants.BASE_URL + "/publiccc/v2/users/{id}";
-<<<<<<< Updated upstream
     public static String DELETE_POST = Constants.BASE_URL + "/public/v2/posts/{id}";
-=======
     public static String DELETE_USER_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
     public static String DELETE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String DELETE_USER_INVALID_PATH = Constants.BASE_URL + "/publiccc/v2/users/{id}";
 
->>>>>>> Stashed changes
+    public static String UPDATE_COMMENT = Constants.BASE_URL+"/public/v2/comments/{id}";
+    public static String MODIFY_COMMENTS = Constants.BASE_URL+"/public/v2/comment/name={page}";
+
     @Step ("Create new user")
     public void createNewUser (File json) {
         SerenityRest.given()
@@ -124,6 +125,18 @@ public class GorestAPI {
     @Step("Get user details with invalid param")
     public void getCommentsDetailsWithInvalidParam (String invalid_param) {
         SerenityRest.given().pathParam("invalid_param", invalid_param);
+    }
+    @Step("Update comments without json")
+    public void updateCommentsWithoutJson (String id){
+        SerenityRest.given()
+                .header("Authorization","Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id);
+    }
+    @Step("Modify comments with json")
+    public void modifyCommentsWithJson (String page){
+        SerenityRest.given()
+                .header("Authorization","Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("page", page);
     }
 
     @Step ("Update user without id")
