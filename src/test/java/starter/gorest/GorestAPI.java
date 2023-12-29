@@ -18,6 +18,7 @@ public class GorestAPI {
     public static String GET_USER_DETAILS_INVALID_PARAM = Constants.BASE_URL + "/public/v2/users?invalid_param={invalid_param}";
     public static String GET_LIST_POST = Constants.BASE_URL+ "/public/v2/posts?page={page}";
     public static String GET_SINGLE_POST = Constants.BASE_URL+ "/public/v2/posts/{id}";
+    public static String GET_USER_DETAILS_WITH_EMAIL = Constants.BASE_URL + "/public/v2/users?email={email}";
 
     @Step ("Create new user")
     public void createNewUser (File json) {
@@ -76,6 +77,11 @@ public class GorestAPI {
     public void getSinglePostInvalid(String id){
         SerenityRest.given()
                 .pathParam("id",id);
+    }
+
+    @Step("Get user details with email")
+    public void getUserDetailsWithEmailParam (String email) {
+        SerenityRest.given().pathParam("email", email );
     }
 
 }
