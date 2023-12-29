@@ -7,4 +7,5 @@ public class GorestResponses {
     public static String MESSAGE_2 = "[1].message";
     public static String TITLE = "title";
     public static String BODY = "body";
+    public static String MESSAGE_NOT_FOUND = "message";
 }
