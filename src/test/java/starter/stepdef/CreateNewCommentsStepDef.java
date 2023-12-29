@@ -31,17 +31,17 @@ public class CreateNewCommentsStepDef {
         gorestAPI.createNewComments(jsonCreateNewComments);
     }
 
-    @Given("Create new comments with invalid json {string}")
-    public void createNewCommentsWithEmptyName(String json) {
-        File jsonCreateNewComments = new File(Constants.REQ_BODY+json);
-        gorestAPI.createNewComments(jsonCreateNewComments);
-    }
+//    @Given("Create new comments with invalid json {string}")
+//    public void createNewCommentsWithEmptyName(String json) {
+//        File jsonCreateNewComments = new File(Constants.REQ_BODY+json);
+//        gorestAPI.createNewComments(jsonCreateNewComments);
+//    }
 
-    @Given("Create new comments with invalid json {string}")
-    public void createNewComments(String json) {
-        File jsonCreateNewComments = new File(Constants.REQ_BODY+json);
-        gorestAPI.createNewComments(jsonCreateNewComments);
-    }
+//    @Given("Create new comments with invalid json {string}")
+//    public void createNewComments(String json) {
+//        File jsonCreateNewComments = new File(Constants.REQ_BODY+json);
+//        gorestAPI.createNewComments(jsonCreateNewComments);
+//    }
 
     @Given("Create new comments with json {string}")
     public void createNewCommentsEmptyBody(String json) {
