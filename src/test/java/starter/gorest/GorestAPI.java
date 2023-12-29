@@ -24,6 +24,7 @@ public class GorestAPI {
     public static String GET_COMMENTS_DETAILS_NAME_PARAM = Constants.BASE_URL+"/public/v2/comments?name={name}";
     public static String GET_COMMENTS_DETAILS_INVALID_PARAM = Constants.BASE_URL+"/public/v2/comments?invalid_param={invalid_param}";
 
+    public static String UPDATE_POST = Constants.BASE_URL+"/public/v2/posts/{id}";
 
     @Step ("Create new user")
     public void createNewUser (File json) {
@@ -88,7 +89,20 @@ public class GorestAPI {
     public void getUserDetailsWithEmailParam (String email) {
         SerenityRest.given().pathParam("email", email );
     }
-
+    @Step("Update post")
+    public void updatePost (int id, File json){
+        SerenityRest.given()
+                .header("Authorization","Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id)
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+    @Step("Update post without json")
+    public void updatePostWithoutJson (int id){
+        SerenityRest.given()
+                .header("Authorization","Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id);
+    }
     @Step("Get comments details with id")
     public void getCommentsDetails (String id) {
         SerenityRest.given().pathParam("id", id);
