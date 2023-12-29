@@ -5,11 +5,11 @@ Feature: Get User Details
     When Send request get user details without id parameter
     Then Status code should be 200
 
-#  Scenario: Get user details with valid user id
-#    Given Get user details with user id 5880025
-#    When Send request get user details with user id
-#    Then Status code should be 200
-#    And Validate json schema "GUD002Schema.json"
+  Scenario: Get user details with valid email
+    Given Get user details with parameter email is "sofie5@yahoo.com"
+    When Send request get user details with parameter email
+    Then Status code should be 200
+    And Validate json schema "GUD002Schema.json"
 
   Scenario: Get user details with unregistered user id
     Given Get user details with user id 5800000
