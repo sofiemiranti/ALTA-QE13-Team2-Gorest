@@ -31,7 +31,12 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
 - **Version Control:**
   - **Git**
     - *Deskripsi:* Git adalah sistem kontrol versi terdistribusi yang memfasilitasi pengembangan kolaboratif, melacak perubahan dalam kode sumber, dan mengelola sejarah proyek.
-  
+
+## HOW TO RUN
+## TEAM MEMBER
+**Sofie Miranti Khairunnisa**
+**Neni Nurhaeni**
+**Rayhan Arjunastya Miftaharif**
 
 ## Want to learn more?
 For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
