@@ -13,7 +13,6 @@ public class GorestAPI {
     public static String CREATE_NEW_USER = Constants.BASE_URL + "/public/v2/users";
     public static String CREATE_NEW_POST = Constants.BASE_URL+"/public/v2/posts";
     public static String CREATE_NEW_COMMENTS = Constants.BASE_URL+"/public/v2/comments";
-    public static String GET_USER_DETAILS_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
     public static String GET_USER_DETAILS_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String GET_USER_DETAILS_NAME_GENDER = Constants.BASE_URL + "/public/v2/users?name={name}&gender={gender}";
     public static String GET_USER_DETAILS_INVALID_PARAM = Constants.BASE_URL + "/public/v2/users?invalid_param={invalid_param}";

@@ -14,15 +14,6 @@ public class GetUserDetailsStepDef {
     @Steps
     GorestAPI gorestAPI;
 
-    @Given("Get user details without user id parameter")
-    public void getUserDetailsWithoutUserIdParameter() {
-    }
-
-    @When("Send request get user details without id parameter")
-    public void sendRequestGetUserDetails() {
-        SerenityRest.when().get(GorestAPI.GET_USER_DETAILS_WITHOUT_ID);
-    }
-
     @Given("Get user details with user id {int}")
     public void getUserDetailsWithUserId(int id) {
         gorestAPI.getUserDetailsWithId(id);
