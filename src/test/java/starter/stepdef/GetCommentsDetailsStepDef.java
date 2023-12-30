@@ -15,13 +15,9 @@ public class GetCommentsDetailsStepDef {
     public void getCommentDetailsWithoutId() {
     }
 
-    @When("Send request get comments details without id")
-    public void sendRequestGetCommentsDetailsWithoutId() {
-        SerenityRest.when().get(GorestAPI.GET_COMMENTS_DETAILS_WITHOUT_ID);
-    }
     //Scenario 2
     @Given("Get comments details with valid id {int}")
-    public void getCommentsDetailsWithValidId(String id) {
+    public void getCommentsDetailsWithValidId(int id) {
         gorestAPI.getCommentsDetails(id);
     }
 
@@ -32,7 +28,7 @@ public class GetCommentsDetailsStepDef {
     //Scenario 3
     @Given("Get comments details with invalid id {string}")
     public void getCommentsDetailsWithInvalidId(String id) {
-        gorestAPI.getCommentsDetails(id);
+        gorestAPI.getCommentsDetailss(id);
     }
 
     @When("Send request get comments details with invalid id")
@@ -43,7 +39,7 @@ public class GetCommentsDetailsStepDef {
     //Scenario 4
     @Given("Get comments details with alphabet id {string}")
     public void getCommentsDetailsWithAlphabetId(String id) {
-        gorestAPI.getCommentsDetails(id);
+        gorestAPI.getCommentsDetailss(id);
     }
 
     @When("Send request get comments details with alphabet id")
@@ -54,7 +50,7 @@ public class GetCommentsDetailsStepDef {
     //Scenario 5
     @Given("Get comments details with special character id {string}")
     public void getCommentsDetailsWithSpecialCharacterId(String id) {
-        gorestAPI.getCommentsDetails(id);
+        gorestAPI.getCommentsDetailss(id);
     }
 
     @When("Send request get comments details with special character id")

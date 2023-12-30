@@ -7,7 +7,7 @@ Feature: Get User Details
     And Validate json schema "GUD002Schema.json"
 
   Scenario: Get user details with unregistered user id
-    Given Get user details with user id 5800000
+    Given Get user details with user id 5880047
     When Send request get user details with user id
     Then Status code should be 404
     And Response body message was "Resource not found"

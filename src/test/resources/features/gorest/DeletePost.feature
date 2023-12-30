@@ -1,11 +1,11 @@
 Feature: Delete posts
-#  Scenario Outline: Delete post with valid id
-#    Given Delete post with valid <id>
-#    When Send request delete posts
-#    Then Status code should be 204
-#    Examples:
-#      | id    |
-#      | 91107 |
+  Scenario Outline: Delete post with valid id
+    Given Delete post with valid <id>
+    When Send request delete posts
+    Then Status code should be 204
+    Examples:
+      | id    |
+      | 91100 |
 
   Scenario Outline: Delete post with non exist id
     Given Delete post with non exist <id>
