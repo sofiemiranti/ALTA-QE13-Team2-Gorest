@@ -19,7 +19,7 @@ public class GorestAPI {
     public static String GET_LIST_POST = Constants.BASE_URL+ "/public/v2/posts?page={page}";
     public static String GET_SINGLE_POST = Constants.BASE_URL+ "/public/v2/posts/{id}";
     public static String GET_USER_DETAILS_WITH_EMAIL = Constants.BASE_URL + "/public/v2/users?email={email}";
-    public static String GET_COMMENTS_DETAILS_WITHOUT_ID = Constants.BASE_URL+ "/public/v2/comments";
+    public static String GET_COMMENTS_DETAILS_WITHOUT_ID = Constants.BASE_URL+ "/public/v2/comments/{id}";
     public static String GET_COMMENTS_DETAILS_WITH_ID = Constants.BASE_URL+ "/public/v2/comments/{id}";
     public static String GET_COMMENTS_DETAILS_NAME_PARAM = Constants.BASE_URL+"/public/v2/comments?name={name}";
     public static String GET_COMMENTS_DETAILS_INVALID_PARAM = Constants.BASE_URL+"/public/v2/comments?invalid_param={invalid_param}";
@@ -113,7 +113,11 @@ public class GorestAPI {
                 .pathParam("id", id);
     }
     @Step("Get comments details with id")
-    public void getCommentsDetails (String id) {
+    public void getCommentsDetails (int id) {
+        SerenityRest.given().pathParam("id", id);
+    }
+    @Step("Get comments details with id")
+    public void getCommentsDetailss (String id) {
         SerenityRest.given().pathParam("id", id);
     }
     @Step("Get comments details with name parameter")

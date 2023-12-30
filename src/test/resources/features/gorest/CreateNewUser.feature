@@ -1,11 +1,11 @@
 Feature: Create New User
 
-#  @Users
-#  Scenario: Create new user with valid name, email, gender, and status
-#    Given Create new user with json "CreateNewUserValid.json"
-#    When Send request post create new user
-#    Then Status code should be 201
-#    And Validate json schema "CreateNewUserValidSchema.json"
+  @Users
+  Scenario: Create new user with valid name, email, gender, and status
+    Given Create new user with json "CreateNewUserValid.json"
+    When Send request post create new user
+    Then Status code should be 201
+    And Validate json schema "CreateNewUserValidSchema.json"
 
   @Users
   Scenario: Create new user with email has been registered before
@@ -23,12 +23,12 @@ Feature: Create New User
     And Response body field was "email" and message was "is invalid"
     And Validate json schema "CNUInvalidEmailSchema.json"
 
-#  @Users
-#  Scenario: Create new user with invalid name
-#    Given Create new user with json "CNUInvalidName.json"
-#    When Send request post create new user
-#    Then Status code should be 422
-#    And Response body field was "name" and message was "is invalid"
+  @Users
+  Scenario: Create new user with invalid name
+    Given Create new user with json "CNUInvalidName.json"
+    When Send request post create new user
+    Then Status code should be 422
+    And Response body field was "name" and message was "is invalid"
 
   @Users
   Scenario: Create new user with invalid status

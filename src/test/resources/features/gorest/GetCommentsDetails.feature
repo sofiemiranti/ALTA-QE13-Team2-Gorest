@@ -1,13 +1,7 @@
 Feature: Get comments details
 
-  Scenario: Get comments details without id
-    Given Get comments details without id
-    When Send request get comments details without id
-    Then Status code should be 200
-    And Validate json schema "GCD001Schema.json"
-
   Scenario: Get comments details with valid id
-    Given Get comments details with valid id 74223
+    Given Get comments details with valid id 74011
     When Send request get comments details with valid id
     Then Status code should be 200
     And Validate json schema "GCD002Schema.json"

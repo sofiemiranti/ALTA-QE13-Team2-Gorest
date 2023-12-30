@@ -1,12 +1,12 @@
 Feature: Delete User
 
-#  Scenario Outline: Delete user with valid user id
-#    Given Delete user with id <id>
-#    When Send request delete user with id
-#    Then Status code should be 204
-#    Examples:
-#      | id      |
-#      | 5883743 |
+  Scenario Outline: Delete user with valid user id
+    Given Delete user with id <id>
+    When Send request delete user with id
+    Then Status code should be 204
+    Examples:
+      | id      |
+      | 5850574 |
 
   Scenario Outline: Delete user with unregistered user id
     Given Delete user with id <id>
