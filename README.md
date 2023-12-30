@@ -1,6 +1,7 @@
 # PROJECT DESCRIPTION
 
 This is a simple starter project for Serenity with Cucumber 6 and RestAssured
+
 Ini adalah sebuah project automation testing untuk Gorest. Project ini menggunakan Serenity, Cucumber dan Rest Assured dalam pengerjaannya
 Project akan menggunakan 3 resource pada Gorest yaitu : Users, Posts, dan Comments
 
