@@ -5,7 +5,7 @@ Feature: Delete posts
     Then Status code should be 204
     Examples:
       | id    |
-      | 91100 |
+      | 91155 |
 
   Scenario Outline: Delete post with non exist id
     Given Delete post with non exist <id>

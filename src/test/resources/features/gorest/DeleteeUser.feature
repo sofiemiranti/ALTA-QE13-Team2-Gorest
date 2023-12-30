@@ -5,8 +5,8 @@ Feature: Delete User
     When Send request delete user with id
     Then Status code should be 204
     Examples:
-      | id      |
-      | 5850574 |
+      | id |
+      | 5850564   |
 
   Scenario Outline: Delete user with unregistered user id
     Given Delete user with id <id>

@@ -11,7 +11,7 @@ Feature: Delete User
       Then Status code should be 204
       Examples:
         | id    |
-        | 73988 |
+        | 74060 |
 
      Scenario Outline: Delete comments with unregistered id
        Given Delete comments with unregistered id "<id>"
