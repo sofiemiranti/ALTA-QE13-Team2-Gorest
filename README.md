@@ -32,8 +32,7 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
   - **Git**
     - *Deskripsi:* Git adalah sistem kontrol versi terdistribusi yang memfasilitasi pengembangan kolaboratif, melacak perubahan dalam kode sumber, dan mengelola sejarah proyek.
 
-## HOW TO RUN
-# Cara Menjalankan Aplikasi
+# HOW TO RUN PROJECT
 
 Berikut adalah langkah-langkah untuk menjalankan aplikasi ALTA-QE13-Team2-Gorest:
 
