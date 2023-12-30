@@ -33,6 +33,34 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
     - *Deskripsi:* Git adalah sistem kontrol versi terdistribusi yang memfasilitasi pengembangan kolaboratif, melacak perubahan dalam kode sumber, dan mengelola sejarah proyek.
 
 ## HOW TO RUN
+# Cara Menjalankan Aplikasi
+
+Berikut adalah langkah-langkah untuk menjalankan aplikasi ALTA-QE13-Team2-Gorest:
+
+1. Clone repositori ini ke dalam sistem lokal Anda dengan menggunakan perintah berikut:
+
+    ```bash
+    git clone https://github.com/sofiemiranti/ALTA-QE13-Team2-Gorest.git
+    ```
+
+2. Pastikan Anda telah menginstal Java dan mengatur lingkungan (environment) Java dengan benar di sistem Anda.
+
+3. Buka proyek ini di text editor pilihan Anda.
+
+4. Buka terminal di text editor atau terminal lain yang tersedia.
+
+5. Jalankan perintah berikut untuk membersihkan dan memverifikasi proyek menggunakan Maven:
+
+    ```bash
+    mvn clean verify
+    ```
+
+   Perintah ini akan membersihkan proyek, mengunduh dependensi, dan menjalankan semua tes yang ada.
+
+6. Setelah proses tersebut selesai tanpa error, Anda sekarang dapat menjalankan aplikasi sesuai dengan kebutuhan proyek.
+
+Pastikan Anda memahami persyaratan dan konfigurasi proyek sebelum menjalankannya. Selamat mencoba!
+
 ## TEAM MEMBER
 - **Sofie Miranti Khairunnisa**
 
