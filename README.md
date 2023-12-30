@@ -34,7 +34,7 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
 
 ## HOW TO RUN
 ## TEAM MEMBER
- **Sofie Miranti Khairunnisa**
+- **Sofie Miranti Khairunnisa**
 
 - **Neni Nurhaeni**
 
