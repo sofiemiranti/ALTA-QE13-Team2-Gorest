@@ -17,11 +17,12 @@ https://docs.google.com/spreadsheets/d/1cBdQqvly8oDn4okTv9QoNrL20UgJI-C_ufF_Flzq
     
 - **Testing and Automation:**
   - **Serenity**
-    - *Deskripsi:* .
+    - *Deskripsi: Serenity adalah framework pengujian otomatis yang memberikan fokus pada pembuatan laporan yang kaya dan mudah dimengerti. Dengan menggunakan Serenity, Anda dapat 
+menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan yang informatif tentang hasil pengujian* .
   - **Cucumber**
-    - *Deskripsi:*
+    - *Deskripsi: Cucumber adalah alat pengembangan berbasis perilaku (BDD) yang memungkinkan tim pengembang dan pemangku kepentingan menulis skenario pengujian dalam bahasa manusia yang dapat dibaca. Dengan menggunakan Cucumber, Anda dapat membuat dokumentasi hidup tentang perilaku aplikasi dan memudahkan komunikasi antara tim pengembang dan non-pengembang*
   - **RestAssured**
-    - *Deskripsi:*
+    - *Deskripsi: RestAssured adalah perpustakaan Java yang digunakan untuk pengujian RESTful APIs. Dengan RestAssured, Anda dapat menguji endpoint API dengan mudah, memvalidasi respons, dan melakukan interaksi dengan layanan HTTP. RestAssured membantu memastikan keandalan dan fungsionalitas dari layanan web yang dikembangkan*
 
 - **Build Management:**
   - **Maven**
