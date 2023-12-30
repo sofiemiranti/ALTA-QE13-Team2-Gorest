@@ -30,12 +30,10 @@ public class GorestAPI {
     public static String UPDATE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String UPDATE_USER_INVALID_PATH_WITH_ID = Constants.BASE_URL + "/publiccc/v2/users/{id}";
     public static String DELETE_POST = Constants.BASE_URL + "/public/v2/posts/{id}";
-    public static String DELETE_USER_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
-    public static String DELETE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String DELETE_USER_INVALID_PATH = Constants.BASE_URL + "/publiccc/v2/users/{id}";
-
     public static String UPDATE_COMMENT = Constants.BASE_URL+"/public/v2/comments/{id}";
     public static String MODIFY_COMMENTS = Constants.BASE_URL+"/public/v2/comment/name={page}";
+    public static String DELETE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
 
     @Step ("Create new user")
     public void createNewUser (File json) {

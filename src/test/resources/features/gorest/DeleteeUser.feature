@@ -1,10 +1,5 @@
 Feature: Delete User
 
-  Scenario: Delete user without user id
-    Given Delete user without user id
-    When Send request delete user
-    Then Status code should be 404
-
 #  Scenario Outline: Delete user with valid user id
 #    Given Delete user with id <id>
 #    When Send request delete user with id

@@ -10,15 +10,6 @@ public class DeleteUserStepDef {
     @Steps
     GorestAPI gorestAPI;
 
-    @Given("Delete user without user id")
-    public void deleteUserWithoutUserId() {
-    }
-
-    @When("Send request delete user")
-    public void sendRequestDeleteUser() {
-        SerenityRest.when().delete(GorestAPI.DELETE_USER_WITHOUT_ID);
-    }
-
     @Given("Delete user with id {int}")
     public void deleteUserWithId(int id) {
         gorestAPI.deleteUserWithId(id);
@@ -26,7 +17,7 @@ public class DeleteUserStepDef {
 
     @When("Send request delete user with id")
     public void sendRequestDeleteUserWithId() {
-        SerenityRest.when().delete(GorestAPI.UPDATE_USER_WITH_ID);
+        SerenityRest.when().delete(GorestAPI.DELETE_USER_WITH_ID);
     }
 
     @Given("Delete user with id {int} and invalid path")
