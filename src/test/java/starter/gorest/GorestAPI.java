@@ -24,7 +24,6 @@ public class GorestAPI {
     public static String GET_COMMENTS_DETAILS_NAME_PARAM = Constants.BASE_URL+"/public/v2/comments?name={name}";
     public static String GET_COMMENTS_DETAILS_INVALID_PARAM = Constants.BASE_URL+"/public/v2/comments?invalid_param={invalid_param}";
     public static String UPDATE_POST = Constants.BASE_URL+"/public/v2/posts/{id}";
-
     public static String UPDATE_USER_WITHOUT_ID = Constants.BASE_URL + "/public/v2/users";
     public static String UPDATE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
     public static String UPDATE_USER_INVALID_PATH_WITH_ID = Constants.BASE_URL + "/publiccc/v2/users/{id}";
@@ -33,6 +32,8 @@ public class GorestAPI {
     public static String UPDATE_COMMENT = Constants.BASE_URL+"/public/v2/comments/{id}";
     public static String MODIFY_COMMENTS = Constants.BASE_URL+"/public/v2/comment/name={page}";
     public static String DELETE_USER_WITH_ID = Constants.BASE_URL + "/public/v2/users/{id}";
+    public static String DELETE_COMMENT_WITHOUT_ID = Constants.BASE_URL + "/public/v2/comments";
+    public static String DELETE_COMMENT_WITH_ID = Constants.BASE_URL+"/public/v2/comments/{id}";
 
     @Step ("Create new user")
     public void createNewUser (File json) {
@@ -179,6 +180,12 @@ public class GorestAPI {
 
     @Step("Delete user with invalid path")
     public void deleteUserInvalidPath (int id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
+                .pathParam("id", id);
+    }
+    @Step("Delete comments with id")
+    public void deleteCommentsWithId (String id) {
         SerenityRest.given()
                 .header("Authorization", "Bearer f44b82b9d89a01d93f5719b21ab257dfccd8c682be8774052489c68211fd9eab")
                 .pathParam("id", id);
