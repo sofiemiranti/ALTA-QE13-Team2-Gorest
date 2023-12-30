@@ -27,7 +27,7 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
 - **Build Management:**
   - **Maven**
     - *Deskripsi:* Maven digunakan sebagai alat manajemen proyek untuk mengelola dependensi, konfigurasi, dan proses build proyek. Ini membantu dalam mengatur siklus hidup proyek dan manajemen dependensi secara efisien.
-    - 
+      
 - **Version Control:**
   - **Git**
     - *Deskripsi:* Git adalah sistem kontrol versi terdistribusi yang memfasilitasi pengembangan kolaboratif, melacak perubahan dalam kode sumber, dan mengelola sejarah proyek.
