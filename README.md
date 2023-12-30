@@ -14,7 +14,7 @@ https://docs.google.com/spreadsheets/d/1cBdQqvly8oDn4okTv9QoNrL20UgJI-C_ufF_Flzq
 ## Tools and Technology Stack
 - **Integrated Development Environment (IDE):** [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/)
   - *Deskripsi:* IntelliJ IDEA Community Edition digunakan sebagai IDE untuk pengembangan perangkat lunak dalam proyek ini. Menyediakan fitur-fitur kaya untuk penyuntingan kode, debugging, dan manajemen proyek.
-    
+
 - **Testing and Automation:**
   - **Serenity**
     - *Deskripsi: Serenity adalah framework pengujian otomatis yang memberikan fokus pada pembuatan laporan yang kaya dan mudah dimengerti. Dengan menggunakan Serenity, Anda dapat 
@@ -27,6 +27,10 @@ menyederhanakan pembuatan dan pelaksanaan tes otomatis serta mendapatkan laporan
 - **Build Management:**
   - **Maven**
     - *Deskripsi:* Maven digunakan sebagai alat manajemen proyek untuk mengelola dependensi, konfigurasi, dan proses build proyek. Ini membantu dalam mengatur siklus hidup proyek dan manajemen dependensi secara efisien.
+    - 
+- **Version Control:**
+  - **Git**
+    - *Deskripsi:* Git adalah sistem kontrol versi terdistribusi yang memfasilitasi pengembangan kolaboratif, melacak perubahan dalam kode sumber, dan mengelola sejarah proyek.
   
 
 ## Want to learn more?
