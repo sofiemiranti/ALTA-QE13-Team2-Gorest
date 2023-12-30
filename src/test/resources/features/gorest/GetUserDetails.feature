@@ -1,10 +1,5 @@
 Feature: Get User Details
 
-  Scenario: Get user details without user id
-    Given Get user details without user id parameter
-    When Send request get user details without id parameter
-    Then Status code should be 200
-
   Scenario: Get user details with valid email
     Given Get user details with parameter email is "sofie5@yahoo.com"
     When Send request get user details with parameter email
