@@ -12,15 +12,21 @@ https://docs.google.com/spreadsheets/d/1cBdQqvly8oDn4okTv9QoNrL20UgJI-C_ufF_Flzq
 ## Overall Report
 ## Coverage Testing
 ## Tools and Technology Stack
-
-### Tools
 - **Integrated Development Environment (IDE):** [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/)
   - *Deskripsi:* IntelliJ IDEA Community Edition digunakan sebagai IDE untuk pengembangan perangkat lunak dalam proyek ini. Menyediakan fitur-fitur kaya untuk penyuntingan kode, debugging, dan manajemen proyek.
+    
+- **Testing and Automation:**
+  - **Serenity**
+    - *Deskripsi:* .
+  - **Cucumber**
+    - *Deskripsi:*
+  - **RestAssured**
+    - *Deskripsi:*
 
-### Technology Stack
 - **Build Management:**
   - **Maven**
     - *Deskripsi:* Maven digunakan sebagai alat manajemen proyek untuk mengelola dependensi, konfigurasi, dan proses build proyek. Ini membantu dalam mengatur siklus hidup proyek dan manajemen dependensi secara efisien.
+  
 
 ## Want to learn more?
 For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
